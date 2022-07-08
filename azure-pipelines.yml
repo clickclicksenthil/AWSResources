@@ -14,9 +14,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: CloudFormationExecuteChangeSet@1
+- task: CloudFormationCreateOrUpdateStack@1
   inputs:
     awsCredentials: 'PriyaAWS'
     regionName: 'us-east-1'
-    changeSetName: 'sss'
-    stackName: 'firstEC2'
+    stackName: 'ddd'
+    templateSource: 'usePrevious'
