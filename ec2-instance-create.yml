@@ -3,5 +3,5 @@ Resources:
   DevEC2Instance: 
     Type: 'AWS::EC2::Instance'
     Properties: 
-      ImageId: ami-07251f912d2a831a3
+      ImageId: ami-065efef2c739d613b
       InstanceType: t2.micro
