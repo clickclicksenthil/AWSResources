@@ -1,15 +1,5 @@
-# Starter pipeline
-- task: CloudFormationCreateOrUpdateStack@1
-  inputs:
-    awsCredentials: 'PriyaAWS'
-    regionName: 'us-east-1'
-    stackName: 'EC2-1'
-    templateSource: 'file'
-    templateFile: 'ec2-instance-create.yml'
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
+# Starter pipeline
 trigger:
 - main
 
