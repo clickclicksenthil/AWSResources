@@ -14,3 +14,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: CloudFormationCreateOrUpdateStack@1
+  inputs:
+    awsCredentials: 'PriyaAWS'
+    regionName: 'us-east-1'
+    stackName: 'firstEC2'
+    templateSource: 'file'
+    templateFile: 'ec2-instance-create.yml'
