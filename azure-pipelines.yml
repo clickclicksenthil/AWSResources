@@ -19,4 +19,5 @@ steps:
     awsCredentials: 'PriyaAWS'
     regionName: 'us-east-1'
     stackName: 'ddd'
-    templateSource: 'usePrevious'
+    templateSource: 'url'
+    templateUrl: 'https://raw.githubusercontent.com/clickclicksenthil/AWSResources/main/ec2-instance-create.yml'
